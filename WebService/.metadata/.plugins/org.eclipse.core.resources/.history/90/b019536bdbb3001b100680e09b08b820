@@ -1,0 +1,40 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cola {
+	public static int i = 10;
+	
+	private ArrayList<JsonToObject> queue = new ArrayList<>();
+	
+	public synchronized void saveAlta(JsonToObject parsedAlta) {
+		if(queue.size() < i) {
+			queue.add(parsedAlta);
+			notify();
+		}
+		while(queue.size() == i) {
+			try {
+				wait();
+			} catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public synchronized void addAlta() {
+        while (queue.size() == 0) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+            	e.printStackTrace();            }
+        }
+        
+        ObjectToJson otj = new ObjectToJson();
+        otj.parseObject(queue.get(0));
+        
+        queue.remove(0); 
+
+		
+	}
+}

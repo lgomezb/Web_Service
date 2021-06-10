@@ -1,0 +1,7 @@
+127.0.0.1 - - [25/May/2021:16:02:44 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [25/May/2021:16:02:46 +0200] "GET /WebService/WEB-INF/classes/persistence/DaoAlta.java HTTP/1.1" 404 610
+0:0:0:0:0:0:0:1 - - [25/May/2021:16:03:19 +0200] "POST /WebService/rest/datos HTTP/1.1" 201 6
+127.0.0.1 - - [25/May/2021:16:32:13 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [25/May/2021:16:32:25 +0200] "POST /WebService/rest/datos HTTP/1.1" 404 641
+127.0.0.1 - - [25/May/2021:16:37:20 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [25/May/2021:16:37:32 +0200] "POST /WebService/rest/datos HTTP/1.1" 201 6

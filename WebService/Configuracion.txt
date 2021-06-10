@@ -1,0 +1,11 @@
+Proyecto creado con:
+-Librerías Jersey
+-Apache Tomcat v.9.0.45
+-JRE System Library (jdk 1.8.0_281)
+-mssql-jdbc-9.2.1.jre8.jar
+
+Configuraciones a cambiar para que sea funcional:
+Apache Tomcat:
+	- Cambiar hostname por IP
+	- Cambiar http1.1 por puerto a eleccion
+URL: http://IP:Puerto/Webservice/rest/datos

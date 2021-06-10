@@ -1,0 +1,17 @@
+127.0.0.1 - - [27/Apr/2021:11:44:16 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:47:05 +0200] "GET /WebService/rest/hola/laura HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:51:07 +0200] "GET /WebService/rest/hola/laura HTTP/1.1" 500 9304
+127.0.0.1 - - [27/Apr/2021:11:54:14 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:54:26 +0200] "GET /WebService/rest/hola/laura HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:54:38 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:54:42 +0200] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:54:49 +0200] "GET /WebService HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:54:49 +0200] "GET /WebService/ HTTP/1.1" 404 702
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:11:54:59 +0200] "GET /WebService/rest HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:03:34 +0200] "GET /webservice/rest/hola/laura HTTP/1.1" 404 725
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:04:25 +0200] "POST /webservice/rest/hola/ HTTP/1.1" 404 720
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:05:10 +0200] "POST /WebService/rest/hola HTTP/1.1" 201 74
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:17:12 +0200] "GET //WebService/rest/hola HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:17:17 +0200] "GET //WebService/rest/hola/1 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:17:24 +0200] "GET /WebService/rest/hola/1 HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:12:17:29 +0200] "GET /WebService/rest/hola HTTP/1.1" 405 693

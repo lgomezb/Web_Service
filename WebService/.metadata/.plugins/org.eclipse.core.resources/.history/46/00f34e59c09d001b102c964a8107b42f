@@ -1,0 +1,26 @@
+package persistence;
+
+import javax.json.bind.annotation.JsonbCreator;
+import javax.json.bind.annotation.JsonbProperty;
+import javax.json.bind.annotation.JsonbTransient;
+
+public class DaoAlta {
+	
+	@JsonbTransient
+	public static List<DaoAlta> listaAlta;
+	
+
+	static {
+		listaAlta = new ArrayList<DaoAlta>();
+	}
+	
+	@JsonbCreator
+	public DaoAlta() {
+		@JsonbProperty("agente") String agente;
+		@JsonbProperty("extension") String extension;
+		@JsonbProperty("host") String host;
+		@JsonbProperty("evento") String evento;
+		@JsonbProperty("descripcion") String descripcion;
+	}
+
+}

@@ -1,0 +1,23 @@
+package entities;
+
+public class Hilo implements Runnable{
+	
+	public Hilo() {
+		
+	}
+	
+	public void run() {
+		//while(true) {
+			if(!Cola.v.isEmpty()) {
+				System.out.println("subiendo un archivo..." + "// " + Thread.currentThread());
+				Cola.addAlta();
+			}
+			
+		}
+
+	}
+
+//}
+
+
+//(new Runnable() {

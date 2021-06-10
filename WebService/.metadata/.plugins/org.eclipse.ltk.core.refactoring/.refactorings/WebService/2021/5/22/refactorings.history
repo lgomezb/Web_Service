@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;entities.FileWriter.java&apos; to &apos;Fichero.java&apos;&#x0D;&#x0A;- Original project: &apos;WebService&apos;&#x0D;&#x0A;- Original element: &apos;entities.FileWriter.java&apos;&#x0D;&#x0A;- Renamed element: &apos;entities.Fichero.java&apos;" description="Rename compilation unit &apos;FileWriter.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;entities{FileWriter.java" name="Fichero.java" references="false" stamp="1622461077263" version="1.0"/>
+</session>

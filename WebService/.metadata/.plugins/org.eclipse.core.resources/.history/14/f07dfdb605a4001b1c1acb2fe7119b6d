@@ -1,0 +1,44 @@
+package webservice;
+
+import java.util.List;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Response;
+
+import entities.Alta;
+import persistence.DaoAlta;
+
+@Path("hola")
+public class WebServiceAlta {
+	
+	DaoAlta daoAlta = new DaoAlta();
+	
+	@GET
+	@Path("/{agente}")
+	@Produces({"text/plain"})
+	public List<Alta> listarPersonas(@QueryParam("agente") String agente) {
+		System.out.println("Listando las personas " + agente);
+		//En caso de que me pida filtrar por un nombre lo hago, en caso de que
+		//no, le devuelvo toda la lista
+		if(agente == null)
+			return daoAlta.list();	
+		else 
+			return daoAlta.getByAgente(agente);
+	}
+	
+	@POST
+	@Consumes({"application/json"})
+	@Produces({"text/plain"})
+	public Response altaDatos(Alta p) {
+		System.out.println("Alta:" + p);
+		daoAlta.add(p);
+		
+		return Response.status(Response.Status.CREATED).entity(p).build();
+	}
+
+}
